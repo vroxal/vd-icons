@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vroxal Design Icons Test</title>
+    <!-- Load the generated CSS -->
+    <link rel="stylesheet" href="dist/vd-icon.css" />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+      .icon-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .icon-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80px;
+        text-align: center;
+        font-size: 24px;
+      }
+      .icon-item i {
+        font-size: 24px;
+      }
+      .icon-name {
+        font-size: 12px;
+        word-break: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vroxal Design Icons Test</h1>
+    <div class="icon-grid" id="iconGrid"></div>
+
+    <script>
+      const grid = document.getElementById("iconGrid");
+
+      // Fetch the JSON instead of import
+      fetch("dist/vd-icon.json")
+        .then((response) => response.json())
+        .then((icons) => {
+          Object.keys(icons).forEach((name) => {
+            const item = document.createElement("div");
+            item.className = "icon-item";
+
+            const iconEl = document.createElement("i");
+            iconEl.className = `vd-icon vd-icon-${name}`;
+
+            const label = document.createElement("div");
+            label.className = "icon-name";
+            label.textContent = name;
+
+            item.appendChild(iconEl);
+            item.appendChild(label);
+            grid.appendChild(item);
+          });
+        })
+        .catch((err) => console.error("Failed to load icons.json", err));
+    </script>
+  </body>
+</html>

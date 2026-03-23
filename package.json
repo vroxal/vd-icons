@@ -1,0 +1,32 @@
+{
+  "name": "@vroxal/vd-icons",
+  "version": "1.0.1",
+  "type": "module",
+  "main": "dist/vd-icon.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node scripts/build-icons.mjs"
+  },
+  "description": "Vroxal Design Icon Library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vroxal/vd-icons.git"
+  },
+  "keywords": [
+    "Icons",
+    "Icon",
+    "Library",
+    "Vroxal Design"
+  ],
+  "author": "@vroxal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vroxal/vd-icons/issues"
+  },
+  "homepage": "https://github.com/vroxal/vd-icons#readme",
+  "devDependencies": {
+    "fantasticon": "^4.1.0"
+  }
+}

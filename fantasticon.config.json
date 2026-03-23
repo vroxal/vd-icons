@@ -1,0 +1,12 @@
+{
+  "inputDir": "./src/icons",
+  "outputDir": "./dist",
+  "fontTypes": ["woff2", "woff", "ttf", "eot"],
+  "assetTypes": ["css", "json"],
+  "name": "vd-icon",
+  "prefix": "vd-icon",
+  "selector": ".vd-icon",
+  "normalize": true,
+  "round": 10,
+  "fontsUrl": "./fonts"
+}
