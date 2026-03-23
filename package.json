@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/vroxal/vd-icons/issues"
   },
-  "homepage": "https://github.com/vroxal/vd-icons#readme",
+  "homepage": "http://vroxal.pages.dev/components/icon",
   "devDependencies": {
     "fantasticon": "^4.1.0"
   }
